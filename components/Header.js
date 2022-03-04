@@ -1,5 +1,6 @@
 import HeaderItem from "./HeaderItem";
 import {HomeIcon,SearchIcon,UserIcon,BadgeCheckIcon,CollectionIcon,LightningBoltIcon} from "@heroicons/react/outline"
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -12,8 +13,10 @@ const Header = () => {
         <HeaderItem title="SEARCH" Icon={SearchIcon} />
         <HeaderItem title="ACCOUNT" Icon={UserIcon} />
       </div>
-      <p>this is header</p>
-      <h1 className="font-bold">Hulu</h1>
+      <div className="w-20 pb-6">
+        <h1 className="font-bold text-4xl">Hulu</h1>
+        
+      </div>
     </header>
   );
 };
